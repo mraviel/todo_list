@@ -1,0 +1,79 @@
+
+body {
+  background-color: #000000 !important; /* Avoid using !important unless necessary */
+}
+
+.ToDoGroup{
+  border: solid rgb(0, 0, 0) 1px;
+  margin-top: 30px;
+  border-radius: 25px;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.ToDoGroup h2 {
+  text-align: center;
+  background-color: #07802D;
+  color: rgb(0, 0, 0);
+  
+}
+
+.ToDoGroup{
+  background-color: #18191A;
+}
+
+.ToDoGroup .ToDoItem{
+  color: white;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.ToDoGroup .addNewToDo{
+  /* background-color: black; */
+  border: none;         /* Remove border */
+  border-bottom: 1px solid #000; /* Add a bottom border for the line effect */
+  width: 100%;         /* Full width */
+  outline: none;       /* Remove outline on focus */
+  height: 30px;        /* Adjust height as needed */
+  padding: 0;          /* Remove padding */
+  box-shadow: none;    /* Remove shadow */
+}
+
+.ToDoGroup .addNewToDo-container {
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  position: relative;
+  width: 200px; /* Adjust width as needed */
+}
+
+.ToDoGroup .addNewToDo-input {
+  background: transparent; /* Make input background transparent */
+  border: none;
+  border-bottom: 2px solid #fff; /* White line */
+  outline: none;
+  width: 100%;
+  padding: 5px 0; /* Adjust padding to match line height */
+  font-size: 16px; /* Font size for the input text */
+  color: #fff; /* White text color */
+}
+
+.ToDoGroup .addNewToDo-input:focus + .addNewToDo-label,
+.ToDoGroup .addNewToDo-input:not(:placeholder-shown) + .addNewToDo-label {
+  top: -10px;
+  left: 0;
+  font-size: 12px;
+  color: #fff; /* White color for the label */
+}
+
+.ToDoGroup .addNewToDo-label {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  pointer-events: none; /* Prevent label from interfering with input */
+  color: #fff; /* White color for the label */
+}
